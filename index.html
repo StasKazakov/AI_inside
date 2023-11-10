@@ -11,6 +11,7 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css\animate.css">
     <link rel="stylesheet" type="text/css" href="css\reset.css">
     <link rel="stylesheet" type="text/css" href="css\style.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -60,10 +61,10 @@
             <div class="btn-txt">Начать</div>
         </button>
         <div class="ball1"></div>
-        <div class="comp"><img src="img/comp.webp" alt="comp"></div>
+        <div class="comp animate__animated animate__backInRight"><img src="img/comp.webp" alt="comp"></div>
     </div>
     <div class="screen2">
-        <div class="massage">
+        <div class="massage  wow animate__animated animate__backInLeft" data-wow-offset="300">
             <svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 1028 486" fill="none">
                 <path d="M10 5H5V10V378V383H10H69V464V474.756L77.223 467.823L177.827 383H1018H1023V378V10V5H1018H10Z" stroke="#494DF8" stroke-width="10"/>
             </svg>
@@ -79,7 +80,7 @@
         <div class="title">
             <h2>Чат-боты с искусственным интеллектом стали прорывной технологией для бизнеса в 2023 году потому что:</h2>
         </div>
-        <div class="benefits">
+        <div class="benefits wow animate__animated animate__backInRight" data-wow-offset="400">
             <div class="benefit1">
                 <div class="rectangle_back">
                     <div class="icon1">
@@ -144,7 +145,7 @@
                 <div class="b_text">Боты могут запоминать огромное количество информации и моментально находить правильные ответы.<br><br></div>
             </div>
         </div>
-        <div class="benefits2">
+        <div class="benefits2 wow animate__animated animate__backInLeft" data-wow-offset="400">
             <div class="benefit4">
                 <div class="rectangle_back">
                     <div class="icon4">
@@ -212,7 +213,7 @@
         </div>
     </div>
     <div class="screen4">
-        <div class="message3">
+        <div class="message3 wow animate__animated animate__backInRight" data-wow-offset="300">
             <div class="message-box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 1028 486" fill="none">
                     <path d="M10 5H5V10V378V383H10H69V464V474.756L77.223 467.823L177.827 383H1018H1023V378V10V5H1018H10Z" stroke="#494DF8" stroke-width="10"/>
@@ -232,10 +233,10 @@
                 <div class="button2_txt">Заказать</div>
             </button>
         <div class="phone">
-            <div class="mass1">Добрый день, чем могу быть полезен?</div>
-            <div class="mass2">Здравствуйте, хочу заказать столик на двоих в 20 часов, в эту пятницу.</div>
-            <div class="mass3">Столик забронирован. В пятницу 3 сетнября. Время 20:00, будем рады вас видеть!</div>
-            <div class="mass4">Спасибо.</div>
+            <div class="mass1 wow animate__animated animate__fadeIn" data-wow-delay="1s" data-wow-duration="2s">Добрый день, чем могу быть полезен?</div>
+            <div class="mass2 wow animate__animated animate__fadeIn" data-wow-delay="3s" data-wow-duration="2s">Здравствуйте, хочу заказать столик на двоих в 20 часов, в эту пятницу.</div>
+            <div class="mass3 wow animate__animated animate__fadeIn" data-wow-delay="5s" data-wow-duration="2s">Столик забронирован. В пятницу 3 сетнября. Время 20:00, будем рады вас видеть!</div>
+            <div class="mass4 wow animate__animated animate__fadeIn" data-wow-delay="7s" data-wow-duration="2s">Спасибо.</div>
         </div>      
         </div>
     </div>
@@ -246,7 +247,7 @@
             <div class="ball4"></div>
         </div>
         <div class="prodjects">
-            <div class="prodject1">
+            <div class="prodject1 wow animate__animated animate__fadeInTopLeft" data-wow-offset="300">
                 <div class="prodject-box">
                     <div class="title-icon">
                         <div class="proj-title">Бот по поиску производителей</div>
@@ -300,7 +301,7 @@
                     </div>
                     </div>
             </div>
-            <div class="prodject2">
+            <div class="prodject2 wow animate__animated animate__fadeInTopRight" data-wow-offset="300"">
                 <div class="prodject-box">
                     <div class="title-icon">
                         <div class="proj-title">Чат-бот для агентства недвижимости</div>
@@ -355,7 +356,7 @@
                     </div>
                 
             </div>
-            <div class="prodject3">
+            <div class="prodject3 wow animate__animated animate__fadeInBottomLeft" data-wow-offset="300">
                 <div class="prodject-box">
                     <div class="title-icon">
                         <div class="proj-title">Чат-бот для ресторана</div>
@@ -409,7 +410,7 @@
                     </div>
                     </div>
             </div>
-            <div class="prodject4">
+            <div class="prodject4 wow animate__animated animate__fadeInBottomRight" data-wow-offset="300">
                 <div class="prodject-box">
                     <div class="title-icon">
                         <div class="proj-title">Бот для выгрузки товара</div>
@@ -586,6 +587,10 @@
             arrows: false,
          });
         });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
     </script>
 </body>
 </html>
