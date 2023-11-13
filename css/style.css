@@ -19,7 +19,7 @@ body {
     background: #0E1225;
     margin: 5vh 10vw 2vw 10vw;
     font-family: Open Sans, sans-serif;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* Heder */
@@ -990,9 +990,19 @@ h2 {
     width: 18rem;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1280px) {
     :root {
-      --default-rem-value: 10px;
+      --default-rem-value: 7px;
+    }
+
+    .ps-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --default-rem-value: 15px;
     }
 }
 
@@ -1002,10 +1012,6 @@ h2 {
     }
 }
 
-@media (min-width: 2560px) {
-    :root {
-        --default-rem-value: 15px;
-    }
-}
+
 
 
