@@ -992,7 +992,7 @@ h2 {
 
 @media (max-width: 1280px) {
     :root {
-      --default-rem-value: 6px;
+      --default-rem-value: 7px;
     }
     .ps-text {
         font-size: 2.8rem;
