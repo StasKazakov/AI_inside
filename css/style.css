@@ -992,11 +992,16 @@ h2 {
 
 @media (max-width: 1280px) {
     :root {
-      --default-rem-value: 7px;
+      --default-rem-value: 6px;
     }
-
     .ps-text {
         font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1700px) {
+    :root {
+      --default-rem-value: 8px;
     }
 }
 
