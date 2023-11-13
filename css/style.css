@@ -3,13 +3,17 @@
     width: 0;
 }
 
+:root {
+    --default-rem-value: 10px;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background: #0E1225;
-    margin: 60px 10%;
+    margin: 5vh 10vw 2vw 10vw;
     font-family: Open Sans, sans-serif;
     overflow-x: hidden; 
 }
@@ -70,6 +74,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    margin-left: 2vw;
 }
 
 .logo-img {
@@ -107,7 +112,7 @@ header {
     right: 0;
     left: 0;
     margin: 0 auto;
-    margin-top: 13px;
+    margin-top: 14px;
 }
 
 .discriptor {
@@ -121,14 +126,16 @@ header {
     margin: 0 auto;
     font-weight: 600;
     text-align: center;
-    width: 400px;
-    margin-top: 13px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 14px;
 }
 
 /* Screen 1 */
 .screen1 {
     display: flex;
-    height: 700px;
+    height: 80vh;
+    justify-content: center;
 }
 
 .text-typing{
@@ -142,7 +149,7 @@ header {
     left: 0;
     margin: 0 50 0 50;
     margin-top: 7%;
-    margin-left: 10%;
+    margin-left: 10%; 
     width: 80%;
     
 }
@@ -194,7 +201,8 @@ header {
 }
 
 .ball1 { 
-    margin-top: 15%;
+    margin-top: 20vh;
+    margin-left: -50vw;
 }
 
 .comp {
@@ -210,6 +218,7 @@ header {
 .screen2 {
     height: 400px;
     width: 100%;
+    margin-left: 3vw;
 
 }
 
@@ -235,8 +244,9 @@ header {
 }
 
 .title {
-    margin: 0 auto;
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 h2 {
@@ -245,12 +255,15 @@ h2 {
     font-size: 40px;
     font-style: normal;
     line-height: 60px;
+    width: 80%;
 }
 
 .benefits, .benefits2 {
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2%;
+    gap: 1vw;
+    width: 80vw;
 }
 
 .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
@@ -262,7 +275,6 @@ h2 {
     border-right: 1px solid rgba(43, 42, 93, 0.84);
     background: rgba(125, 154, 255, 0.07);
     box-shadow: 0px 5px 30px 0px rgba(0, 10, 20, 0.03);
-    margin: 10px;
 }
 
 .rectangle_back {
@@ -478,7 +490,7 @@ h2 {
 /* Screen4 */
 .screen4 {
     width: 100%;
-    height: 500px;
+    height: 55vh;
     display: grid;
     justify-content: flex-end;
 }
@@ -504,6 +516,7 @@ h2 {
     transform: scaleX(-1);
     justify-content: flex-end;
     position: absolute;
+    margin: 3vh;
 }
 
 .ball3 {
@@ -757,7 +770,7 @@ h2 {
 .wrapper {
     display: flex;
     position: absolute;
-    height: 160%;
+    height: 120vh;
     width: 90%;
     justify-content: flex-end;
     text-align: center;
@@ -804,8 +817,9 @@ h2 {
 .screen8 {
     background: rgba(125, 154, 255, 0.07);
     width: 100vw;
-    height: 850px;
-    margin-left: -150px;
+    height: 90vh;
+    margin-left: -10vw;
+
 }
 
 .offer {
@@ -872,7 +886,7 @@ h2 {
 
 .screen9 {
     display: flex;
-    height: 150px;
+    height: 15vh;
 }
 
 .footer {
@@ -949,6 +963,12 @@ h2 {
 .ps-btn:hover {
     background: linear-gradient(109deg, #444CF7 0%, #8A5DFF 100%); 
 }
+
+@media (min-width: 600px) {
+    :root {
+      --default-rem-value: 20px;
+    }
+  }
 
 
 
