@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css\animate.css">
     <link rel="stylesheet" type="text/css" href="css\reset.css">
     <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\media.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
@@ -45,24 +46,28 @@
                 loop: true 
             });
         </script>
-        <button class="main-btn">
-            <div class="animation-container">
-                <img id="animated-image" src="img/img1.webp" alt="Image">
+        <div class="conteiner">
+            <div class="ball1"></div>
+            <button class="main-btn">
+                <div class="animation-container">
+                    <img id="animated-image" src="img/img1.webp" alt="Image">
+                </div>
+                <script>
+                    const images = ["img/img1.webp", "img/img2.webp", "img/img3.webp", "img/img4.webp"];
+                    const imgElement = document.getElementById('animated-image');
+                    let currentIndex = 0;
+                    function changeImage() {
+                    imgElement.src = images[currentIndex];
+                    currentIndex = (currentIndex + 1) % images.length;
+                    }
+                    setInterval(changeImage, 1000);
+                </script>
+                <div class="btn-txt">Начать</div>
+            </button>
+            <div class="pc">
+                <div class="comp animate__animated animate__backInRight"><img src="img/comp.webp" alt="comp"></div>
             </div>
-            <script>
-                const images = ["img/img1.webp", "img/img2.webp", "img/img3.webp", "img/img4.webp"];
-                const imgElement = document.getElementById('animated-image');
-                let currentIndex = 0;
-                function changeImage() {
-                imgElement.src = images[currentIndex];
-                currentIndex = (currentIndex + 1) % images.length;
-                }
-                setInterval(changeImage, 1000);
-            </script>
-            <div class="btn-txt">Начать</div>
-        </button>
-        <div class="ball1"></div>
-        <div class="comp animate__animated animate__backInRight"><img src="img/comp.webp" alt="comp"></div>
+        </div>
     </div>
     <div class="screen2">
         <div class="massage  wow animate__animated animate__backInLeft" data-wow-offset="300">
@@ -79,85 +84,160 @@
         <div class="title">
             <h2>Чат-боты с искусственным интеллектом стали прорывной технологией для бизнеса в 2023 году потому что:</h2>
         </div>
-        <div class="benefits wow animate__animated animate__backInRight" data-wow-offset="400">
-            <div class="benefit1">
-                <div class="rectangle_back">
-                    <div class="icon1">
-                        <div class="dollar">$</div>
-                        <img class="arrow" src="img/benefits/arrow.svg" alt="img">
-                    </div>
-                </div>
-                <div class="b_title">Затраты на персонал</div>
-                <div class="b_text">Работа выполненная ботом на 92% дешевле, чем работа сделанная обычным сотрудником.<br><br></div>
-            </div>
-            <div class="benefit2">
-                <div class="rectangle_back">
-                    <div class="icon2">
-                        <div class="massage2">
-                            <img class="bmessage" src="img/benefits/message.svg" alt="img">
-                            <div class="thousand">1000</div>
+        <div class="benefits-box">
+            <div class="benefits wow animate__animated animate__backInRight" data-wow-offset="400">
+                <div class="benefit1">
+                    <div class="rectangle_back">
+                        <div class="icon1">
+                            <div class="dollar">$</div>
+                            <img class="arrow" src="img/benefits/arrow.svg" alt="img">
                         </div>
-                        
                     </div>
+                    <div class="b_title">Затраты на персонал</div>
+                    <div class="b_text">Работа выполненная ботом на 92% дешевле, чем работа сделанная обычным сотрудником.<br><br></div>
                 </div>
-                <div class="b_title">Скорость обработки</div>
-                <div class="b_text">Чат-боты могут обрабатывать до 1000 запросов в секунду. Если нужно, то могут и больше.<br><br><br></div>
+                <div class="benefit2">
+                    <div class="rectangle_back">
+                        <div class="icon2">
+                            <div class="massage2">
+                                <img class="bmessage" src="img/benefits/message.svg" alt="img">
+                                <div class="thousand">1000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b_title">Скорость обработки</div>
+                    <div class="b_text">Чат-боты могут обрабатывать до 1000 запросов в секунду. Если нужно, то могут и больше.<br><br><br></div>
+                </div>
+                <div class="benefit3">
+                    <div class="rectangle_back">
+                        <div class="icon3">
+                            <img class="database" src="img/benefits/database.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="b_title">Работа с данными</div>
+                    <div class="b_text">Боты могут запоминать огромное количество информации и моментально находить правильные ответы.<br><br></div>
+                </div>
             </div>
-            <div class="benefit3">
-                <div class="rectangle_back">
-                    <div class="icon3">
-                        <img class="database" src="img/benefits/database.svg" alt="img">
+            <div class="benefits2 wow animate__animated animate__backInLeft" data-wow-offset="400">
+                <div class="benefit4">
+                    <div class="rectangle_back">
+                        <div class="icon4">
+                            <img class="clock" src="img/benefits/clock.svg" alt="img">
+                        </div>
                     </div>
+                    <div class="b_title">24\7</div>
+                    <div class="b_text">Благодоря чат-ботам ваши клиенты будут получать ответы круглосуточно и без выходных.<br><br><br></div>
                 </div>
-                <div class="b_title">Работа с данными</div>
-                <div class="b_text">Боты могут запоминать огромное количество информации и моментально находить правильные ответы.<br><br></div>
+                <div class="benefit5">
+                    <div class="rectangle_back">
+                        <div class="icon5">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                            <div class="line4"></div>
+                            <div class="line5"></div>
+                            <div class="line6"></div>
+                            <div class="line7"></div>
+                            <div class="line8"></div>
+                            <div class="line9"></div>
+                            <div class="line10"></div>
+                        </div>
+                    </div>
+                    <div class="b_title">Статистика</div>
+                    <div class="b_text">Анализ данных о запросах клиентов можно проводить в реальном времени, что существенно помогает повысить продажи.</div>
+                </div>
+                <div class="benefit6">
+                    <div class="rectangle_back">
+                        <div class="icon6">
+                            <img class="smile" src="img/benefits/smile.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="b_title">Эмоции</div>
+                    <div class="b_text">У ботов всегда хорошее настроение. Они не подвержены эмоциям и легко обслуживают даже самых “трудных” клиентов.</div>
+                </div>
             </div>
         </div>
-        <div class="benefits2 wow animate__animated animate__backInLeft" data-wow-offset="400">
-            <div class="benefit4">
-                <div class="rectangle_back">
-                    <div class="icon4">
-                        <img class="clock" src="img/benefits/clock.svg" alt="img">
+        <div class="benefits-box-mob">
+            <div class="benefit-row1">
+                <div class="benefit1">
+                    <div class="rectangle_back">
+                        <div class="icon1">
+                            <div class="dollar">$</div>
+                            <img class="arrow" src="img/benefits/arrow.svg" alt="img">
+                        </div>
                     </div>
+                    <div class="b_title">Затраты на персонал</div>
+                    <div class="b_text">Работа выполненная ботом на 92% дешевле, чем работа сделанная обычным сотрудником.</div>
                 </div>
-                <div class="b_title">24\7</div>
-                <div class="b_text">Благодоря чат-ботам ваши клиенты будут получать ответы круглосуточно и без выходных.<br><br><br></div>
+                <div class="benefit2">
+                    <div class="rectangle_back">
+                        <div class="icon2">
+                            <div class="massage2">
+                                <img class="bmessage" src="img/benefits/message.svg" alt="img">
+                                <div class="thousand">1000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b_title">Скорость обработки</div>
+                    <div class="b_text">Чат-боты могут обрабатывать до 1000 запросов в секунду. Если нужно, то могут и больше.</div>
+                </div>
             </div>
-            <div class="benefit5">
-                <div class="rectangle_back">
-                    <div class="icon5">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                        <div class="line4"></div>
-                        <div class="line5"></div>
-                        <div class="line6"></div>
-                        <div class="line7"></div>
-                        <div class="line8"></div>
-                        <div class="line9"></div>
-                        <div class="line10"></div>
+            <div class="benefit-row2">
+                <div class="benefit3">
+                    <div class="rectangle_back">
+                        <div class="icon3">
+                            <img class="database" src="img/benefits/database.svg" alt="img">
+                        </div>
                     </div>
+                    <div class="b_title">Работа с данными</div>
+                    <div class="b_text">Боты могут запоминать огромное количество информации и моментально находить правильные ответы.</div>
                 </div>
-                <div class="b_title">Статистика</div>
-                <div class="b_text">Анализ данных о запросах клиентов можно проводить в реальном времени, что существенно помогает повысить продажи.</div>
+                <div class="benefit4">
+                    <div class="rectangle_back">
+                        <div class="icon4">
+                            <img class="clock" src="img/benefits/clock.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="b_title">24\7</div>
+                    <div class="b_text">Благодоря чат-ботам ваши клиенты будут получать ответы круглосуточно и без выходных.</div>
+                </div>
             </div>
-            <div class="benefit6">
-                <div class="rectangle_back">
-                    <div class="icon6">
-                        <img class="smile" src="img/benefits/smile.svg" alt="img">
+            <div class="benefit-row3">
+                <div class="benefit5">
+                    <div class="rectangle_back">
+                        <div class="icon5">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                            <div class="line4"></div>
+                            <div class="line5"></div>
+                            <div class="line6"></div>
+                            <div class="line7"></div>
+                            <div class="line8"></div>
+                            <div class="line9"></div>
+                            <div class="line10"></div>
+                        </div>
                     </div>
+                    <div class="b_title">Статистика</div>
+                    <div class="b_text">Анализ данных о запросах клиентов можно проводить в реальном времени, что существенно помогает повысить продажи.</div>
                 </div>
-                <div class="b_title">Эмоции</div>
-                <div class="b_text">У ботов всегда хорошее настроение. Они не подвержены эмоциям и легко обслуживают даже самых “трудных” клиентов.</div>
+                <div class="benefit6">
+                    <div class="rectangle_back">
+                        <div class="icon6">
+                            <img class="smile" src="img/benefits/smile.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="b_title">Эмоции</div>
+                    <div class="b_text">У ботов всегда хорошее настроение. Они не подвержены эмоциям и легко обслуживают даже самых “трудных” клиентов.</div>
+                </div>
             </div>
         </div>
     </div>
-        </div>
     </div>
     <div class="screen4">
         <div class="message3 wow animate__animated animate__backInRight" data-wow-offset="300">
             <div class="message-box">
-                <img class="massage-frame" src="img/message.svg" alt="img">
+                <img class="massage-frame2" src="img/message.svg" alt="img">
             </div>
             <div class="message-text2">
                 <p>Люди созданы для творчества, скучную работу оставьте ботам.</p>

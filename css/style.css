@@ -9,6 +9,7 @@
 
 html {
     font-size: var(--default-rem-value);
+    overflow-x: hidden;
 }
 
 * {
@@ -17,13 +18,14 @@ html {
 
 body {
     background: #0E1225;
-    margin: 5vh 10vw 2vw 10vw;
     font-family: Open Sans, sans-serif;
-    overflow-x: hidden;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /* Heder */
 header {
+    margin: 5vh 10vw 0vw 10vw;
     display: flex;
     align-items: center;
 }
@@ -137,14 +139,15 @@ header {
 
 /* Screen 1 */
 .screen1 {
+    margin: 0vh 10vw 0vw 10vw;
     display: flex;
-    height: 80vh;
+    height: 83vh;
     justify-content: center;
 }
 
 .text-typing{
     color: white;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 140%;
     position: absolute;
@@ -177,6 +180,7 @@ header {
     border: 0.2rem solid #0E1225;
     cursor: pointer;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 #animated-image {
@@ -206,43 +210,50 @@ header {
 
 .ball1 { 
     margin-top: 20vh;
-    margin-left: -50vw;
+    margin-left: 30rem;
 }
 
+
+
 .comp {
-    width: 50rem;
-    height: 50rem;
+    width: 90%;
+    height: 90%;
     display: flex;
-    position: absolute;
-    top: 45%; 
-    left: 70%;
+    margin-left: 120rem;
+    margin-top: 20rem;
 }
 
 /* Screen2 */
 .screen2 {
+    margin: 0vh 10vw 0vw 10vw;
     height: 40rem;
-    width: 100%;
-    margin-left: 3vw;
-
 }
-.massage-frame {
+.massage-frame, .massage-frame2 {
     width: 64rem;
     height: 46rem;
 }
 .massage-text {
     width: 56rem;
     color: #FFF;
-    font-size: 2.5rem;
-    margin-top: -34rem;
+    font-size: 2.4rem;
+    margin-top: -36rem;
     margin-left: 4rem;
     font-weight: bold;
     font-style: italic;
+    line-height: 3.4rem;
+}
+
+.str {
+    font-size: 0.5rem;
+    height: 2rem; 
 }
 
 /* Screen3 */
 .screen3 {
+    margin: 0vh 10vw 0vw 10vw;
     width: 100%;
     height: 120rem;
+    margin: 0 auto;
 }
 
 .ball2 {
@@ -254,6 +265,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: 3%;
 }
 
 h2 {
@@ -265,12 +277,19 @@ h2 {
     width: 80%;
 }
 
+.benefits-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
 .benefits, .benefits2 {
     display: flex; 
     justify-content: center;
     margin-top: 2%;
     gap: 1vw;
-    width: 80vw;
+    width: 100vw;
 }
 
 .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
@@ -497,7 +516,6 @@ h2 {
     display: flex;
     width: 31.8rem;
     height: 15.6rem;
-    flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: #ACACD0;
@@ -511,6 +529,7 @@ h2 {
 
 /* Screen4 */
 .screen4 {
+    /* margin: 0vh 10vw 0vw 10vw; */
     width: 100%;
     height: 55rem;
     display: grid;
@@ -530,7 +549,7 @@ h2 {
     font-style: italic;
     width: 60rem;
     line-height: 4rem;
-    margin-top: 15rem;
+    margin: 15vh 10vw 0vw 10vw;
 }
 
 .message-box {
@@ -539,15 +558,18 @@ h2 {
     justify-content: flex-end;
     position: absolute;
     margin: 3vh;
+    margin: 0vh 10vw 0vw 10vw;
 }
 
 .ball3 {
     display: flex;
-    justify-self: start
+    justify-self: start;
+    margin: 0vh 10vw 0vw 10vw;
 }
 
 /* Screen5 */
 .screen5 {
+    margin: 0vh 10vw 0vw 10vw;
     display: flex;
     height: 75rem;
     justify-content: center;
@@ -647,6 +669,7 @@ h2 {
 /* Screen6 */
 
 .screen6 {
+    margin: 0vh 10vw 0vw 10vw;
     display: block;
     height: 135rem;
 }
@@ -806,6 +829,7 @@ h2 {
 
 /* Screen7 */
 .tech-slider {
+    margin: 0vh 10vw 0vw 10vw;
     display: flex;
     padding: 3rem;
     justify-content: center;
@@ -839,14 +863,12 @@ h2 {
 .screen8 {
     background: rgba(125, 154, 255, 0.07);
     width: 100vw;
-    height: 90rem;
-    margin-left: -10vw;
-
+    height: 80rem;
 }
+
 
 .offer {
     display: flex;
-    padding: 3rem;
     justify-content: center;
     align-items: center;
 }
@@ -906,8 +928,9 @@ h2 {
 /* Screen9 */
 
 .screen9 {
+    margin: 0vh 10vw 0vw 10vw;
     display: flex;
-    height: 15rem;
+    height: 20rem;
 }
 
 .footer {
@@ -988,33 +1011,6 @@ h2 {
 .ps-img {
     height: 18rem;
     width: 18rem;
-}
-
-@media (max-width: 1280px) {
-    :root {
-      --default-rem-value: 7px;
-    }
-    .ps-text {
-        font-size: 2.8rem;
-    }
-}
-
-@media (max-width: 1700px) {
-    :root {
-      --default-rem-value: 8px;
-    }
-}
-
-@media (min-width: 2560px) {
-    :root {
-        --default-rem-value: 15px;
-    }
-}
-
-@media (min-width: 3840px) {
-    :root {
-        --default-rem-value: 20px;
-    }
 }
 
 

@@ -1,0 +1,383 @@
+@media (max-width: 3840px) {
+    :root {
+        --default-rem-value: 20px;
+    }
+    .benefits-box-mob {
+        display: none;
+    }
+    .comp {
+        width: 80rem;
+        height: 80rem;
+        margin-top: 40rem;
+    }
+    .footer {
+        display: flex;
+        width: 95%;
+    }
+}
+
+@media (max-width: 2560px) {
+    :root {
+        --default-rem-value: 15px;
+    }
+    .benefits-box-mob {
+        display: none;
+    }
+    .screen3 {
+        height: 124rem;
+    }
+    .comp {
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    :root {
+      --default-rem-value: 10px;
+    }
+    .comp {
+        width: 60rem;
+        height: 60rem;
+        left: 65%;
+    }
+    .benefits-box-mob {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    :root {
+      --default-rem-value: 7px;
+    }
+    .ps-text {
+        font-size: 2.8rem;
+    }
+    .comp {
+        left: 65%;
+    }
+    .benefits-box-mob {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --default-rem-value: 5px;
+    }
+    
+    .message-text2 {
+        margin: 14vh 12vw 0vw 10vw;
+    }
+    .massage-frame2 {
+        margin: 4rem;
+    }
+    .button2 {
+        display: none;
+    }
+    .screen5 {
+        margin: 0 auto;
+    }
+    .screen8 {
+        height: 80rem;
+    }
+}
+
+@media (max-width: 940px) {
+    :root {
+        --default-rem-value: 15px;
+    }
+    .header {
+        flex-direction: column;
+        height: 30rem;
+    }
+    .loader {
+        width: 18rem;
+        height: 18rem;
+        margin-left: -1.6rem;
+    }
+
+    .loader:before {
+        top: 1.2rem;
+        left: 1.2rem;
+        right: 1.2rem;
+        bottom: 1.2rem;
+    }
+
+    .loader:after {
+        filter: blur(6rem);
+    }
+
+    .logo-img {
+        height: 15rem;
+        width: 15rem;
+
+    }
+
+    .logo {
+        padding-bottom: 5rem;
+    }
+
+    .logo-title {
+        font-size: 7.2rem;
+        width: 22.4rem;
+        height: 8rem;
+        padding: 1rem;
+        margin-top: -1rem;
+    }
+
+    .ball2, .ball1 {
+        display: none;
+    }
+    
+    .discriptor {
+        margin-top: 20rem;
+    }
+
+    .cloud {
+        width: 90%;
+        padding: 2.5rem 0rem 2.5rem 40rem;
+        margin-top: 17.5rem;
+    }
+    .screen1 {
+        height: 60vh;
+    }
+    .text-typing{
+        margin-top: 0;
+        font-size: 4rem;
+    }
+    .main-btn {
+        width: 25rem;
+        height: 7rem;
+        font-size: 4rem;
+        top: 85%;
+    }
+    #animated-image {
+        width: 5rem; 
+        height: 5rem;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .massage-frame, .massage-frame2 {
+        width: 80vw;
+        height: 56vw;
+    }
+
+    .massage-text {
+        width: 75vw;
+        font-size: 1.7rem;
+        margin-left: 2rem;
+        line-height: 2.5rem;
+        margin-top: -26rem;
+    }
+
+    .screen2 {
+        height: 56vw;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .benefits-box {
+        display: none;
+    }
+
+    .benefits-box-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .benefit-row1, .benefit-row2, .benefit-row3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
+        width: 46vw;
+        height: 41rem;
+        padding: 1rem;
+        border: 0.4rem solid #0E1225;
+    }
+
+    .rectangle_back {
+        width: 38vw;
+        height: 16rem;
+    }
+
+    .icon1 {
+        padding: 4.5vw;
+    }
+
+    .dollar {
+        width: 9rem;
+        height: 14rem;
+        font-size: 14rem;
+    }
+
+    .arrow {
+        width: 9rem;
+        height: 14rem;
+    }
+
+    .thousand {
+        font-size: 6rem;
+        font-weight: 700;
+        padding: 1.2rem;
+    }
+
+    .bmessage {
+        width: 32vw;
+        height: 11rem;
+    }
+
+    .icon2 {
+        padding: 2rem;
+    }
+
+    .b_title {
+        display: flex;
+        width: 38vw;
+        height: 2rem;
+        line-height: 3rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .b_text {
+        display: flex;
+        width: 37vw;
+        height: 15vw;
+        font-size: 1.5rem;
+        margin-left: 2vw;
+        line-height: 2.5rem;
+    }
+
+    .w-b-text {
+        display: flex;
+        text-align: start;
+        height: 25vw;
+        
+    }
+
+    .database {
+        width: 21vw;
+        height: 18vw;
+    }
+
+    .clock, .smile {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9, .line10 {
+        width: 3vw;
+    }
+
+    .line1 {
+        height: 50%;
+    }
+
+    .line2 {
+        height: 70%;
+    }
+
+    .line3 {
+        height: 50%;
+    }
+
+    .line4 {
+        height: 20%;
+    }
+
+    .line5 {
+        height: 50%;
+    }
+
+    .line6 {
+        height: 60%;
+    }
+
+    .line7 {
+        height: 80%;
+    }
+
+    .line8 {
+        height: 70%;
+    }
+
+    .line9 {
+        height: 90%;
+    }
+
+    .line10 {
+        height: 100%;
+    }
+
+    .screen3 {
+        height: 182vh;
+    }
+
+    .screen4 {
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .message-box {
+        margin: 0vh -5vw 0vw 0vw;
+    }
+
+    .message-text2 {
+        font-size: 1.9rem;
+        line-height: 2.9rem;
+        width: 65vw;
+        margin-left: 5vw;
+        margin-top: 20vw;
+
+    }
+
+    .baner {
+        flex-direction: column;
+        height: 140vw;
+    }
+
+    .baner_text {
+        font-size: 3rem;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        line-height: 4.5rem;
+        height: 35vw;
+        margin-top: 5vw;
+    }
+
+    .phone {
+        margin: auto;
+        height: 90vw;
+        margin-top: -5vw;
+    }
+
+    .screen5 {
+        height: 110vh;
+        justify-content: center;
+    }
+
+    .project_title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .project_title2 {
+        font-size: 2.7rem;
+    }
+
+    .prodjects, .wrapper {
+        display: none;
+    }
+
+}
