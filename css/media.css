@@ -91,8 +91,8 @@
         height: 30rem;
     }
     .loader {
-        width: 18rem;
-        height: 18rem;
+        width: 16rem;
+        height: 16rem;
         margin-left: -1.6rem;
     }
 
@@ -108,8 +108,8 @@
     }
 
     .logo-img {
-        height: 15rem;
-        width: 15rem;
+        height: 13rem;
+        width: 13rem;
 
     }
 
@@ -122,7 +122,7 @@
         width: 22.4rem;
         height: 8rem;
         padding: 1rem;
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .ball2, .ball1 {
@@ -343,7 +343,7 @@
 
     .baner {
         flex-direction: column;
-        height: 140vw;
+        height: 145vw;
     }
 
     .baner_text {
@@ -351,19 +351,20 @@
         justify-content: center;
         text-align: center;
         margin: auto;
-        line-height: 4.5rem;
+        line-height: 4rem;
         height: 35vw;
-        margin-top: 5vw;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
     }
 
     .phone {
         margin: auto;
-        height: 90vw;
-        margin-top: -5vw;
+        height: 100vw;
+        margin-top: -1vw;
     }
 
     .screen5 {
-        height: 110vh;
+        height: 120vh;
         justify-content: center;
     }
 
@@ -380,4 +381,156 @@
         display: none;
     }
 
+    .prodjects-mob {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .screen6 {
+        height: 140vw;
+    }
+
+    .prodjects-mob-slider {
+        width: auto;
+        display: flex;
+        height: 100%;
+        
+    }
+
+    .prodject1, .prodject2, .prodject3, .prodject4 {
+        border: 0.5rem solid #0E1225;
+        width: 80vw;
+        height: 80vw;
+        padding: 3vw;
+    }
+
+    .pbox {
+        width: 25vw;
+        height: 25vw;
+        padding: 2vw;
+    }
+
+    .picon {
+        display: flex;
+        width: 19vw;
+        height: 19vw;
+    }
+
+    .proj-title {
+        display: flex;
+        width: 41vw;
+        height: 26vw;
+    }
+
+    .tec-title {
+        display: flex;
+        font-size: 2.7rem;
+        line-height: 4rem;
+        width: 90%;
+        padding: 2rem;
+        text-align: center;
+        height: 10rem;
+        margin: auto; 
+    }
+
+    .tech-icon {
+        display: flex;
+        height: 17vw;
+        width: 17vw;
+    }
+
+    .tech-title {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .screen8 {
+        height: 90vw;
+    }
+
+    .offer p {
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .wrap {
+        display: flex;
+        height: 45%;
+        width: 100%;
+        justify-content: center;
+        padding: 5%;
+    }
+    .buttons {
+        display: flex;
+        height: 10%;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .btn-yes, .btn-no {
+        width: 25vw;
+        height: 8vw;
+    }
+    .screen9 {
+        height: 35rem;
+    }
+    .footer {
+        height: 35rem;
+        padding: 1.5rem;
+    }
+
+    .ps-btn {
+        width: 25vw;
+        font-size: 1.6rem;
+    }
+
+    .ps-img {
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    :root {
+        --default-rem-value: 14px;
+    }
+    .screen3 {
+        height: 170vh;
+    }
+    .screen5 {
+        height: 105vh;
+    }
+    .screen6 {
+        height: 100vh;
+    }
+    .tech-title {
+        font-size: 1.5rem;
+    }
+    .massage-text {
+        margin-top: -24rem;
+        font-size: 1.5rem;
+    }
+    .btn-yes, .btn-no {
+        font-size: 3rem;
+    }
+    .baner_text {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .proj-title {
+        margin-left: -2rem;
+        width: 45vw;
+    }
+
+    .row {
+        padding-left: 1rem;
+    }
+    .pbox {
+        padding: 1rem;
+    }
+   
 }
