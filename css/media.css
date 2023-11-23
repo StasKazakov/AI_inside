@@ -2,7 +2,7 @@
     :root {
         --default-rem-value: 20px;
     }
-    .benefits-box-mob {
+    .benefits-box-mob, .prodjects-mob {
         display: none;
     }
     .comp {
@@ -20,11 +20,14 @@
     :root {
         --default-rem-value: 15px;
     }
-    .benefits-box-mob {
+    .benefits-box-mob, .prodjects-mob {
         display: none;
     }
     .screen3 {
         height: 124rem;
+    }
+    .screen1 {
+        height: 85vh;
     }
     .comp {
         margin-top: 20rem;
@@ -40,7 +43,7 @@
         height: 60rem;
         left: 65%;
     }
-    .benefits-box-mob {
+    .benefits-box-mob, .prodjects-mob {
         display: none;
     }
 }
@@ -55,7 +58,7 @@
     .comp {
         left: 65%;
     }
-    .benefits-box-mob {
+    .benefits-box-mob, .prodjects-mob {
         display: none;
     }
 }
@@ -88,13 +91,14 @@
     }
     .header {
         flex-direction: column;
-        height: 30rem;
+        height: 20rem;
     }
     .loader {
-        width: 16rem;
-        height: 16rem;
-        margin-left: -1.6rem;
+        width: 12rem;
+        height: 12rem;
+        margin-left: -1.2rem;
     }
+
 
     .loader:before {
         top: 1.2rem;
@@ -108,8 +112,8 @@
     }
 
     .logo-img {
-        height: 13rem;
-        width: 13rem;
+        height: 10rem;
+        width: 10rem;
 
     }
 
@@ -118,11 +122,10 @@
     }
 
     .logo-title {
-        font-size: 7.2rem;
+        font-size: 6rem;
         width: 22.4rem;
         height: 8rem;
-        padding: 1rem;
-        margin-top: -2rem;
+        margin-top: -0.3rem;
     }
 
     .ball2, .ball1 {
@@ -130,51 +133,56 @@
     }
     
     .discriptor {
-        margin-top: 20rem;
+        margin-top: 13rem;
     }
 
     .cloud {
         width: 90%;
         padding: 2.5rem 0rem 2.5rem 40rem;
-        margin-top: 17.5rem;
+        margin-top: 10.5rem;
     }
     .screen1 {
         height: 60vh;
     }
     .text-typing{
         margin-top: 0;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .main-btn {
-        width: 25rem;
-        height: 7rem;
-        font-size: 4rem;
+        width: 20rem;
+        height: 5rem;
+        font-size: 3rem;
         top: 85%;
+        padding: 1rem;
+        border-radius: 2rem;
     }
     #animated-image {
-        width: 5rem; 
-        height: 5rem;
+        width: 3rem; 
+        height: 3rem;
+        margin-top: 1rem;
+        
     }
 
-    .pc {
+    .btn-txt {
+        margin-top: -0.1rem;
+    }
+
+    .pc, .ball-box {
         display: none;
     }
 
-    .massage-frame, .massage-frame2 {
-        width: 80vw;
-        height: 56vw;
-    }
-
-    .massage-text {
-        width: 75vw;
-        font-size: 1.7rem;
-        margin-left: 2rem;
-        line-height: 2.5rem;
-        margin-top: -26rem;
-    }
-
     .screen2 {
-        height: 56vw;
+        width: 100%;
+        height: 42vw;
+    }
+
+    .message, .message2 {
+        width: 100%;
+    }
+
+    .message p {
+        font-size: 1.8rem;
+        line-height: 140%;
     }
     
     h2 {
@@ -320,11 +328,23 @@
     }
 
     .screen3 {
-        height: 182vh;
+        height: 320vh;
     }
 
+    .message2 p {
+        font-size: 1.8rem;
+        line-height: 140%;
+    }
+
+    .message2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     .screen4 {
-        height: 50vh;
+        height: 60vh;
         justify-content: center;
     }
 
@@ -364,7 +384,7 @@
     }
 
     .screen5 {
-        height: 120vh;
+        height: 200vh;
         justify-content: center;
     }
 
@@ -382,7 +402,7 @@
     }
 
     .prodjects-mob {
-        display: flex;
+        display: block;
         justify-content: center;
         padding: 2rem;
     }
@@ -391,6 +411,7 @@
         height: 140vw;
     }
 
+    
     .prodjects-mob-slider {
         width: auto;
         display: flex;
@@ -474,6 +495,8 @@
     .btn-yes, .btn-no {
         width: 25vw;
         height: 8vw;
+        font-size: 3rem;
+        text-transform: uppercase;
     }
     .screen9 {
         height: 35rem;
@@ -488,8 +511,12 @@
         font-size: 1.6rem;
     }
 
-    .ps-img {
+    .ps-img, .empty {
         display: none;
+    }
+
+    .ps-text {
+        padding: 1rem;
     }
 }
 
