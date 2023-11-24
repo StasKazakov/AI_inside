@@ -817,16 +817,25 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
-         $('.tech-slider').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            speed: 2000,
-            autoplaySpeed: 1000,
-            arrows: false,
-         });
+        $(document).ready(function() {
+  // Инициализация слайдера
+  var slidesToShowValue = window.innerWidth <= 740 ? 4 : 5;
+
+  $('.tech-slider').slick({
+    slidesToShow: slidesToShowValue,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    arrows: false
+    });
+
+  // Обновление слайдера при изменении размеров окна
+  window.addEventListener('resize', function() {
+    slidesToShowValue = window.innerWidth <= 740 ? 4 : 5;
+    $('.tech-slider').slick('slickSetOption', 'slidesToShow', slidesToShowValue, true);
         });
+    });
     </script>
     <script>
         $(document).ready(function(){

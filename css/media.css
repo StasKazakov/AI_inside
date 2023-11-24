@@ -543,6 +543,10 @@
     :root {
         --default-rem-value: 14px;
     }
+
+    .screen2 {
+        min-height: 350px;
+    }
     .screen3 {
         height: 225vw;
         min-height: 2100px;
@@ -553,8 +557,7 @@
         min-height: 400px;
     }
     .screen5 {
-        height: 95vh;
-        min-height: 1300px;
+        height: 150vw;
     }
     .screen6 {
         height: 100vh;
@@ -578,7 +581,7 @@
         display: flex;
         justify-content: space-between;
         width: 60vw;
-        margin-left: 3vw;
+        margin-left: 4vw;
     }
 
     .tech-title {
@@ -590,8 +593,18 @@
         font-size: 1.5rem;
     }
 
+    .prodjects-mob {
+        width: 110%;
+        justify-content: center;
+        margin-left: -1.7rem; 
+    }
+
     .btn-yes, .btn-no {
         font-size: 3rem;
+    }
+
+    .baner {
+        max-height: 1200px;
     }
 
     .baner_text {
@@ -606,4 +619,94 @@
     .screen8 {
         max-height: 700px;
     }
+}
+
+@media (max-width: 740px) {
+    .title h2 {
+        width: 95%;
+    }
+
+    .cloud {
+        width: 100%;
+    }
+
+    .screen2 {
+        min-height: 380px;
+    }
+
+    .screen3 {
+        min-height: 2220px;
+        max-height: 2300px;
+    }
+
+    .screen4 {
+        max-height: 400px;
+    }
+
+    .icon-img {
+        margin-left: -2vw;
+    }
+
+    .prodjects-mob {
+        width: 120%;
+        margin-left: -3.8rem;
+    }
+
+    .title-icon {
+        width: 90%;
+    }
+
+    .proj-title {
+        width: 50vw;
+        max-width: 400px;
+    }
+
+    .dollar {
+        width: 8rem;
+        height: 12rem;
+        font-size: 12rem;
+    }
+
+    .arrow {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .b_title {
+        display: flex;
+        width: 38vw;
+        height: 1.8rem;
+        font-size: 1.8rem;
+    }
+    .screen5 {
+        min-height: 1100px;
+    }
+    .baner {
+        min-height: 1100px;
+    }
+
+    .phone {
+        min-height: 750px;
+    }
+
+    .screen6 {
+        min-height: 1300px;
+    }
+
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
+        min-height: 630px;
+    }
+
+    .tech-title {
+        font-size: 1.3rem;
+    }
+
+    .btn-yes, .btn-no {
+        font-size: 2.4rem;
+    }
+    .ps-btn {
+        min-width: 230px;
+    }
+
+
 }
