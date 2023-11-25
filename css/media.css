@@ -150,16 +150,16 @@
         line-height: 160%;
     }
     .main-btn {
-        width: 20rem;
-        height: 5rem;
-        font-size: 3rem;
+        width: 25rem;
+        height: 7rem;
+        font-size: 4rem;
         top: 75%;
         padding: 1rem;
         border-radius: 2rem;
     }
     #animated-image {
-        width: 3rem; 
-        height: 3rem;
+        width: 3.5rem; 
+        height: 3.5rem;
         margin-top: 1rem;
         
     }
@@ -471,7 +471,7 @@
     .tec-title {
         display: flex;
         font-size: 2.7rem;
-        line-height: 4rem;
+        line-height: 140%;
         width: 90%;
         padding: 2rem;
         text-align: center;
@@ -784,4 +784,212 @@
     .wraps {
         margin-top: -2rem;
     }
+}
+
+@media (max-width: 580px) {
+    :root {
+        --default-rem-value: 12px;
+    }
+
+    .discriptor {
+        font-size: 2.8rem;
+    }
+
+    .screen4 {
+        max-height: 350px;
+        min-height: 300px;
+    }
+
+    .project_title {
+        font-size: 2.6rem;
+        line-height: 140%;
+    }
+
+    .screen6 {
+        min-height: 900px;
+        max-height: 1000px;
+    }
+
+    .offer p {
+        font-size: 3rem;
+    }
+
+    .screen8 {
+        max-height: 450px;
+    }
+
+    .wraps {
+        margin-top: -1rem;
+    }
+    .footer {
+        height: 32rem;
+    }
+    .message-box {
+        width: 85%;
+    }
+
+    .b_title {
+        height: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    .dollar {
+        width: 6rem;
+        height: 9rem;
+        font-size: 9rem;
+    }
+
+    .arrow {
+        width: 6rem;
+        height: 9rem;
+    }
+
+    .bmessage {
+        width: 30vw;
+    }
+
+    .thousand {
+        font-size: 4rem;
+    }
+
+    .tick-text {
+        font-size: 1.7rem;
+        margin-left: 0.5rem;
+    }
+
+    .icon-img {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --default-rem-value: 10px;
+    }
+
+    .project_title, .project_title2  {
+        font-size: 2.3rem;
+    }
+
+    .screen6 {
+        min-height: 750px;
+        max-height: 800px;
+    }
+
+    .offer p {
+        font-size: 2.5rem;
+    }
+
+    .wrap {
+        align-items: center;
+    }
+
+    .screen8 {
+        max-height: 400px;
+    }
+
+    .ps-text {
+        font-size: 2.3rem;
+        margin-top: -1rem;
+    }
+    .cloud {
+        width: 95%;
+        padding: 2rem 0rem 2rem 95vw;
+        margin-top: 10.5rem;
+    }
+
+    .text-typing {
+        margin-top: 3vh;
+    }
+
+    .logo {
+        margin-left: 10vw;
+    }
+
+    .discriptor {
+        font-size: 2.5rem;
+    }
+
+    .thousand {
+        margin-top: 1.5rem;
+    }
+
+    .screen9 {
+        min-height: 360px;
+    }
+
+    .ps {
+        max-height: 350px;
+        min-height: 320px;
+    }
+
+    .ps-offer {
+        max-height: 350px;
+
+    }
+
+    .message-box {
+        max-height: 280px;
+    }
+
+    .baner_text {
+        min-height: 170px;
+    }
+
+    .phone {
+        min-height: 600px;
+    }
+
+    .baner {
+        min-height: 850px;
+    }
+
+    .screen5 {
+        min-height: 900px;
+    }
+
+    .tick-text {
+        font-size: 1.5rem;
+    }
+
+    .prodject-table {
+        width: 31rem;
+        height: 25rem;
+    }
+
+    .tec-title {
+        height: 12rem;
+    }
+
+    .tech-title {
+        font-size: 1.1rem;
+    }
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
+        min-height: 350px;
+        max-height: 380px;
+    }
+
+    .screen3 {
+        min-height: 1350px;
+        max-height: 1800px;
+    }
+
+    .b_text {
+        display: flex;
+        width: 37vw;
+        height: 15vw;
+        font-size: 1.2rem;
+        margin-left: 2vw;
+        line-height: 140%;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+    }
+
+    .main-btn {
+        top: 90%;
+    }
+
 }
