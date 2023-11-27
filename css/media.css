@@ -807,12 +807,16 @@
     }
 
     .screen6 {
-        min-height: 900px;
+        min-height: 950px;
         max-height: 1000px;
     }
 
+    .offer {
+        min-height: 250px;
+    }
+
     .offer p {
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 
     .screen8 {
@@ -862,6 +866,23 @@
         height: 2rem;
         width: 2rem;
     }
+    .main-btn {
+        top:85%;
+    }
+
+    .text-typing {
+        margin-top: 5vh;
+    }
+
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
+        min-height: 520px;
+        max-height: 540px;
+    }
+
+    .screen3 {
+        min-height: 1800px;
+        max-height: 2000px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -874,8 +895,8 @@
     }
 
     .screen6 {
-        min-height: 750px;
-        max-height: 800px;
+        min-height: 700px;
+        max-height: 750px;
     }
 
     .offer p {
@@ -1021,4 +1042,123 @@
         font-size: 2rem;
     }
 
+}
+
+@media (max-width: 380px) {
+    :root {
+        --default-rem-value: 9px;
+    }
+
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
+        min-height: 290px;
+        max-height: 310px;
+    }
+
+    .screen4 {
+        max-height: 320px;
+        min-height: 250px;
+    }
+
+    .screen3 {
+        min-height: 1050px;
+        max-height: 1600px;
+    }
+
+    .screen6 {
+        min-height: 600px;
+        max-height: 700px;
+    }
+
+}
+/* Adaptive for landscape. */
+
+@media only screen and (max-width: 980px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+    .main-btn {
+        position: relative;
+        width: 20rem;
+        height: 6rem;
+    }
+    .screen3 {
+        min-height: 2200px;
+    }
+    .screen4 {
+        min-height: 370px;
+    }
+    
+    .btn-txt {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+    .main-btn {
+        width: 20rem;
+        height: 6rem;
+    }
+    .btn-txt {
+        font-size: 3rem;
+    }
+    .screen3 {
+        min-height: 2000px;
+    }
+    .screen6 {
+        min-height: 1200px;
+    }
+}
+
+@media only screen and (max-width: 780px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+    .main-btn {
+        width: 20rem;
+        height: 6rem;
+    }
+    .btn-txt {
+        font-size: 3rem;
+    }
+    .screen3 {
+        min-height: 2100px;
+    }
+}
+
+@media only screen and (max-width: 680px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+    .screen6 {
+        min-height: 1150px;
+        max-height: 1250px;
+    }
+    .main-btn {
+        width: 20rem;
+        height: 6rem;
+    }
+    .btn-txt {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 580px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 380px) and (orientation: landscape) {
+    .screen1 {
+        min-height: 500px;
+    }
 }
