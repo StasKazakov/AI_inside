@@ -731,6 +731,7 @@
 
     .title h2 {
         font-size: 2.6rem;
+        line-height: 140%;
     }
 
     .screen3 {
@@ -966,13 +967,13 @@
         font-size: 1.1rem;
     }
     .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6 {
-        min-height: 350px;
-        max-height: 380px;
+        min-height: 320px;
+        max-height: 340px;
     }
 
     .screen3 {
-        min-height: 1350px;
-        max-height: 1800px;
+        min-height: 1150px;
+        max-height: 1600px;
     }
 
     .b_text {
@@ -990,6 +991,34 @@
 
     .main-btn {
         top: 90%;
+    }
+
+    .screen2 {
+        min-height: 350px;
+    }
+
+    .rectangle_back {
+        height: 12rem;
+    }
+
+    .message, .message2 {
+        padding: 1rem;
+    }
+
+    .message2 p {
+        font-size: 1.6rem;
+    }
+
+    .tec-title {
+        font-size: 2.3rem;
+    }
+
+    .prodjects-mob {
+        margin-left: -3.1rem;
+    }
+
+    .btn-yes, .btn-no {
+        font-size: 2rem;
     }
 
 }
