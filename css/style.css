@@ -183,6 +183,10 @@ header {
     padding: 2rem;
 }
 
+.main-btn:focus {
+    outline: none;
+}
+
 #animated-image {
     width: 7rem; 
     height: 7rem; 
@@ -623,52 +627,49 @@ h2 {
     background: linear-gradient(114deg, #8A5DFF 0%, #444CF7 100%);
     display: flex;
     justify-content: center; 
+    align-items: center;
+    /* flex-direction: row; */
 }
 
 .baner_text {
     display: flex;
-    width: 50rem;
+    width: 5rem;
     height: 61.9rem;
-    flex-direction: column;
     justify-content: center;
     color: rgba(255, 255, 255, 0.99);
     font-family: Open Sans;
-    font-size: 5rem;
+    font-size: 2.7rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 6rem;
-    margin-top: -5rem;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify;
+    align-items: center;
+    flex: 2;
+    margin-left: 5rem;
 }
-.button2 {
-    width: 25rem;
-    height: 7rem;
-    border: none;
-    background: rgba(255, 255, 255, 0.1); 
-    color: #FFF; 
-    font-size: 1.6rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 2rem;
-    font-family: Open Sans;
-    font-size: 4rem;
-    margin-top: 50rem;
-    margin-left: -37rem;
-    font-weight: 600; 
-}
-
-.button2:hover {
-    background: rgba(255, 255, 255, 0.3); 
-    color: #ffffff; 
+.w-phone {
+    display: inline-block;
+    width: 40%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .phone {
-    width: 32rem;
+    width: 30rem;
     height: 62rem;
     flex-shrink: 0;
     border-radius: 4rem;
     background: rgba(255, 255, 255, 0.3);
-    margin-left: 20rem;
-    margin-top: 4rem;
+    flex: 2;
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 9rem;    
+}
+
+.messs {
+    height: 30rem;
 }
 
 .mass1, .mass2, .mass3, .mass4 {
@@ -681,7 +682,6 @@ h2 {
     font-family: Open Sans;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 4rem;
     padding: 1rem;
     line-height: 2.4rem;
 }

@@ -368,29 +368,44 @@
 
     .baner {
         flex-direction: column;
-        height: 145vw;
+        height: 120vw;
+        min-height: 1200px;
     }
 
     .baner_text {
-        font-size: 3rem;
+        width: 90%;
+        font-size: 1.5rem;
         justify-content: center;
         text-align: center;
         margin: auto;
-        line-height: 4rem;
-        height: 35vw;
+        line-height: 140%;
+        height: 26rem;
         margin-top: 4vw;
         margin-bottom: 2vw;
     }
 
+
+    .w-phone {
+        width: 30rem;
+        margin: 0 auto;
+        padding-bottom: 2vh;
+        display: flex; 
+    }
+
     .phone {
         margin: auto;
-        height: 100vw;
-        margin-top: -1vw;
+        height: 50rem;
+        align-items: center;
+    }
+
+    .mass1 {
+        margin-top: 7rem;
     }
 
     .screen5 {
-        height: 150vw;
+        height: 130vw;
         justify-content: center;
+        min-height: 1200px;
     }
 
     .project_title {
@@ -619,7 +634,7 @@
     }
 
     .baner_text {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         width: 90%;
     }
 
@@ -690,14 +705,18 @@
         font-size: 1.8rem;
     }
     .screen5 {
-        min-height: 1100px;
+        min-height: 1200px;
     }
     .baner {
-        min-height: 1100px;
+        min-height: 1150px;
     }
 
     .phone {
         min-height: 750px;
+    }
+
+    .baner_text {
+        font-size: 1.5rem;
     }
 
     .screen6 {
@@ -740,8 +759,8 @@
     }
 
     .screen6 {
-        min-height: 1000px;
-        max-height: 1150px;
+        min-height: 1150px;
+        max-height: 1200px;
     }
 
     .dollar {
@@ -761,13 +780,13 @@
     }
 
     .baner_text {
-        height: 40vw;
-        font-size: 2.3rem;
+        height: 50vw;
+        font-size: 1.4rem;
         line-height: 140%;
     }
 
     .baner {
-        min-height: 1050px;
+        min-height: 1150px;
     }
 
     .btn-yes, .btn-no {
@@ -784,6 +803,10 @@
     
     .wraps {
         margin-top: -2rem;
+    }
+
+    .project_title {
+        font-size: 2.7rem;
     }
 }
 
@@ -960,7 +983,7 @@
     }
 
     .phone {
-        min-height: 600px;
+        min-height: 550px;
     }
 
     .baner {
@@ -1067,6 +1090,23 @@
     .screen6 {
         min-height: 600px;
         max-height: 700px;
+    }
+
+    .main-btn:focus {
+        outline: none;
+    }
+
+    .phone {
+        min-height: 500px;
+    }
+
+    .offer {
+        min-height: 180px;
+        max-height: 200px;
+    }
+
+    .wrap {
+        max-height: 100px;
     }
 
 }
